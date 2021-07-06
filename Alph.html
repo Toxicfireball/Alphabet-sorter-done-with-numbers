@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Number Guessing Game</title>
+
+<style>
+
+</style>
+</head>
+
+<body>
+  <script type="text/javascript">
+
+var play;
+var g=0;
+play=1;
+
+while(play==1){
+var gen=Math.floor((Math.random() * 26)+1 );
+
+
+while (g==0) {
+  var nu;
+  var gue=window.prompt("What is your guess?: ");
+  if(gue=="A"){
+  nu=1;
+  }
+  else if (gue == "B") {
+  nu=2;
+
+  }
+  else if(gue == "C"){
+  nu =3;
+  }
+  else if( gue == "D"){
+  nu=4;
+  }
+
+  else if (gue == "E"){
+  nu=5;
+  }
+
+  else if (gue == "F"){
+
+  nu=6;
+
+  }
+
+  else if (gue == "G"){
+
+  nu=7;
+
+  }
+  else if (gue == "H"){
+
+  nu=8;
+
+  }
+  else if (gue == "I"){
+  nu=9;
+  }
+  else if (gue == "J"){
+  nu=10;
+  }
+  else if (gue == "K"){
+
+  nu=11;
+
+  }
+  else if (gue == "L"){
+  nu=12;
+  }
+  else if (gue == "M"){
+  nu=13;
+  }
+  else if (gue == "N"){
+  nu=14;
+  }
+
+  else if (gue == "O"){
+  nu=15;
+  }
+  else if (gue == "P"){
+  nu=16;
+  }
+  else if (gue == "Q"){
+  nu=17;
+  }
+  else if (gue == "R"){
+  nu=18;
+  }
+  else if (gue == "S"){
+  nu=19;
+  }
+  else if (gue == "T"){
+  nu=20;
+  }
+  else if (gue == "U")
+  {
+  nu=21;
+  }
+  else if( gue == "V")
+  {
+  nu=22;
+  }
+
+  else if (gue == "W"){
+  nu=23;
+  }
+  else if (gue == "X"){
+  nu=24;
+  }
+  else if (gue == "Y"){
+  nu=25;
+  }
+  else if (gue == "Z" ){
+  nu=26;
+  }
+  if(gen == nu)
+ {
+     alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN ");
+     g=1;
+     var pl=window.prompt("Do you want another round?(Y/N) "));
+     if (pl=="Y")
+     {
+       play=1;
+     }
+     else{
+       play==0;
+     }
+
+ }
+ else if(nu > gen)
+ {
+
+     alert("OOPS SORRY!! TRY A SMALLER NUMBER");
+ }
+ else if (nu < gen)
+ {
+
+     alert("OOPS SORRY!! TRY A GREATER NUMBER");
+ }
+
+}
+
+}
+</script>
+</body>
+</html>
