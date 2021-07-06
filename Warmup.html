@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Number Guessing Game</title>
+
+<style>
+
+</style>
+</head>
+
+<body>
+  <script type="text/javascript">
+
+
+function(In1, In2){
+  if (In1 % 5 == 0 && In2 % 5 ==0)
+  {
+var val=In1+In2;
+  }
+
+else if (In1 % 3==0 && In2 % 3==0){
+  var val=In1*In2;
+
+}
+else{
+
+var val=In1-In2;
+Math.abs(val);
+}
+document.write(val);
+
+}
+
+
+    </script>
